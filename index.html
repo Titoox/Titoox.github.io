@@ -19,15 +19,12 @@
   <meta property="og:locale" content="fr_FR">
 
   <!-- Preconnect avant toute requête CDN (évite le double round-trip) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
 
-  <!-- Polices : Poppins + Inter uniquement, display=swap évite le FOIT -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300&family=Inter:wght@200;300;400;500&display=swap">
   <!-- Font Awesome (icônes) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 
+  <link rel="stylesheet" href="css/fonts.css" />
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="css/responsive.css" />
   <link rel="stylesheet" href="css/scroll.css" />
@@ -132,6 +129,10 @@
           <!-- Pas de loading="lazy" sur hero — above the fold -->
           <img
             src="images/photo_profil.webp"
+            srcset="images/photo_profil-320w.webp 320w,
+                    images/photo_profil-480w.webp 480w,
+                    images/photo_profil.webp 640w"
+            sizes="(max-width: 767px) 220px, 320px"
             alt="Titouan Gaucher, développeur web junior"
             width="640" height="940"
             decoding="async"
@@ -216,6 +217,10 @@
           <img
             loading="lazy" decoding="async"
             src="images/photo_profil.webp"
+            srcset="images/photo_profil-320w.webp 320w,
+                    images/photo_profil-480w.webp 480w,
+                    images/photo_profil.webp 640w"
+            sizes="(max-width: 767px) 140px, 300px"
             alt="Photo de profil de Titouan Gaucher"
             width="640" height="940"
           />
