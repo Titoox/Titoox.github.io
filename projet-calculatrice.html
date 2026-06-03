@@ -13,7 +13,6 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://titoox.github.io/projet-calculatrice.html">
   <meta property="og:locale" content="fr_FR">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
   <link rel="icon" type="image/png" href="./images/favicon.png" />
   <link rel="stylesheet" href="css/fonts.css" />
   <link rel="stylesheet" href="css/styles.css" />
@@ -58,7 +57,7 @@
       <span class="logo-rest">ortfolio</span>
     </a>
     <a class="nav-back" href="index.html#projets">
-      <i class="fa-solid fa-arrow-left"></i> Retour aux projets
+      <svg class="icon" aria-hidden="true"><use href="images/icons.svg#arrow-left"></use></svg> Retour aux projets
     </a>
   </header>
 
@@ -84,7 +83,7 @@
 
       <div class="projet-hero__actions reveal">
         <a class="btn-demo" href="https://titoox.github.io/Calculatrice-JS/" target="_blank" rel="noopener">
-          <i class="fa-solid fa-calculator"></i> Tester la calculatrice
+          <svg class="icon" aria-hidden="true"><use href="images/icons.svg#calculator"></use></svg> Tester la calculatrice
         </a>
       </div>
     </div>
@@ -121,13 +120,13 @@
           </div>
         </div>
         <div class="preview-tag preview-tag--css">
-          <i class="fa-brands fa-js" style="color:#f0db4f"></i> JS
+          <svg class="icon" aria-hidden="true" style="color:#f0db4f"><use href="images/icons.svg#js"></use></svg> JS
         </div>
         <div class="preview-tag preview-tag--js">
-          <i class="fa-brands fa-html5" style="color:#e34f26"></i> HTML
+          <svg class="icon" aria-hidden="true" style="color:#e34f26"><use href="images/icons.svg#html5"></use></svg> HTML
         </div>
         <div class="preview-tag preview-tag--html">
-          <i class="fa-brands fa-css3" style="color:#254bde"></i> CSS
+          <svg class="icon" aria-hidden="true" style="color:#254bde"><use href="images/icons.svg#css3"></use></svg> CSS
         </div>
       </div>
     </div>
@@ -209,25 +208,25 @@
     </div>
     <div class="stack-grid">
       <div class="tech-card reveal">
-        <div class="tech-card__icon"><i class="fa-brands fa-js" style="color:#f0db4f"></i></div>
+        <div class="tech-card__icon"><svg class="icon" aria-hidden="true" style="color:#f0db4f"><use href="images/icons.svg#js"></use></svg></div>
         <div class="tech-card__name">JavaScript</div>
         <div class="tech-card__desc">Logique complète — classe Calculator, gestion des événements, manipulation du DOM, calculs enchaînés.</div>
         <div class="tech-card__usage">Classes ES6 · addEventListener · querySelector · data-attributes</div>
-        <div class="tech-card__bg"><i class="fa-brands fa-js"></i></div>
+        <div class="tech-card__bg"><svg class="icon" aria-hidden="true"><use href="images/icons.svg#js"></use></svg></div>
       </div>
       <div class="tech-card reveal">
-        <div class="tech-card__icon"><i class="fa-brands fa-html5" style="color:#e34f26"></i></div>
+        <div class="tech-card__icon"><svg class="icon" aria-hidden="true" style="color:#e34f26"><use href="images/icons.svg#html5"></use></svg></div>
         <div class="tech-card__name">HTML5</div>
         <div class="tech-card__desc">Structure sémantique avec data-attributes pour identifier les boutons — séparation stricte HTML/JS.</div>
         <div class="tech-card__usage">data-number · data-operation · data-output · data-all-clear</div>
-        <div class="tech-card__bg"><i class="fa-brands fa-html5"></i></div>
+        <div class="tech-card__bg"><svg class="icon" aria-hidden="true"><use href="images/icons.svg#html5"></use></svg></div>
       </div>
       <div class="tech-card reveal">
-        <div class="tech-card__icon"><i class="fa-brands fa-css3" style="color:#254bde"></i></div>
+        <div class="tech-card__icon"><svg class="icon" aria-hidden="true" style="color:#254bde"><use href="images/icons.svg#css3"></use></svg></div>
         <div class="tech-card__name">CSS Grid</div>
         <div class="tech-card__desc">Layout en grille 4 colonnes — boutons span-two pour le 0 et AC. Responsive sans media queries.</div>
         <div class="tech-card__usage">grid-template-columns · span · gap · border-radius</div>
-        <div class="tech-card__bg"><i class="fa-brands fa-css3"></i></div>
+        <div class="tech-card__bg"><svg class="icon" aria-hidden="true"><use href="images/icons.svg#css3"></use></svg></div>
       </div>
     </div>
   </section>
@@ -246,7 +245,7 @@
           Encapsuler toute la logique dans une classe — état courant, opérande précédent, opération en attente — sans variable globale.
         </div>
         <div class="diff-card__solution">
-          <i class="fa-solid fa-check-circle"></i>
+          <svg class="icon" aria-hidden="true"><use href="images/icons.svg#check-circle"></use></svg>
           Classe ES6 avec méthodes clear(), appendNumber(), chooseOperation(), compute().
         </div>
       </div>
@@ -257,7 +256,7 @@
           Identifier les boutons sans ajouter de JS dans le HTML — utilisation des data-attributes pour typer chaque bouton.
         </div>
         <div class="diff-card__solution">
-          <i class="fa-solid fa-check-circle"></i>
+          <svg class="icon" aria-hidden="true"><use href="images/icons.svg#check-circle"></use></svg>
           querySelectorAll('[data-number]') — sélection propre sans classes ni IDs.
         </div>
       </div>
@@ -268,7 +267,7 @@
           Division par zéro, double virgule, opérations enchaînées, résultat affiché comme opérande.
         </div>
         <div class="diff-card__solution">
-          <i class="fa-solid fa-check-circle"></i>
+          <svg class="icon" aria-hidden="true"><use href="images/icons.svg#check-circle"></use></svg>
           Conditions de garde à chaque étape — includes('.'), isNaN(), parseFloat().
         </div>
       </div>
@@ -279,7 +278,7 @@
           Reproduire la grille d'une calculatrice avec le bouton 0 sur 2 colonnes et AC sur 2 colonnes également.
         </div>
         <div class="diff-card__solution">
-          <i class="fa-solid fa-check-circle"></i>
+          <svg class="icon" aria-hidden="true"><use href="images/icons.svg#check-circle"></use></svg>
           grid-column: span 2 — solution CSS pure, aucun hack.
         </div>
       </div>
@@ -293,7 +292,7 @@
       <h2 class="cta-title">Calculatrice<br><em>vanilla JS</em></h2>
       <div class="cta-actions">
         <a class="btn-cta-primary" href="https://titoox.github.io/Calculatrice-JS/" target="_blank" rel="noopener">
-          <i class="fa-solid fa-calculator"></i> Ouvrir la calculatrice
+          <svg class="icon" aria-hidden="true"><use href="images/icons.svg#calculator"></use></svg> Ouvrir la calculatrice
         </a>
       </div>
     </div>
@@ -316,10 +315,10 @@
     </div>
     <nav class="icones-footer" aria-label="Réseaux sociaux">
       <a href="https://www.linkedin.com/in/titouan-gaucher/" target="_blank" aria-label="LinkedIn">
-        <i class="fa-brands fa-linkedin"></i>
+        <svg class="icon" aria-hidden="true"><use href="images/icons.svg#linkedin"></use></svg>
       </a>
       <a href="https://github.com/Titoox" target="_blank" aria-label="GitHub">
-        <i class="fa-brands fa-github"></i>
+        <svg class="icon" aria-hidden="true"><use href="images/icons.svg#github"></use></svg>
       </a>
     </nav>
   </footer>

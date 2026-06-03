@@ -13,8 +13,6 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://titoox.github.io/projet-tismailb2b.html">
   <meta property="og:locale" content="fr_FR">
-  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
   <link rel="icon" type="image/png" href="./images/favicon.png" />
   <link rel="stylesheet" href="css/fonts.css" />
   <link rel="stylesheet" href="css/styles.css" />
@@ -60,7 +58,7 @@
       <span class="logo-rest">ortfolio</span>
     </a>
     <a class="nav-back" href="index.html#projets">
-      <i class="fa-solid fa-arrow-left"></i> Retour aux projets
+      <svg class="icon" aria-hidden="true"><use href="images/icons.svg#arrow-left"></use></svg> Retour aux projets
     </a>
   </header>
 
@@ -87,10 +85,10 @@
 
       <div class="projet-hero__actions reveal">
         <a class="btn-demo" href="http://tismailb2b.mmi25d04.mmi-troyes.fr" target="_blank" rel="noopener">
-          <i class="fa-solid fa-globe"></i> Voir la démo
+          <svg class="icon" aria-hidden="true"><use href="images/icons.svg#globe"></use></svg> Voir la démo
         </a>
         <a class="btn-code" href="https://github.com/Titoox" target="_blank" rel="noopener">
-          <i class="fa-brands fa-github"></i> Code source
+          <svg class="icon" aria-hidden="true"><use href="images/icons.svg#github"></use></svg> Code source
         </a>
       </div>
     </div>
@@ -116,13 +114,13 @@
           </div>
         </div>
         <div class="preview-tag preview-tag--js">
-          <i class="fa-brands fa-php" style="color:#7277ad"></i> PHP
+          <svg class="icon" aria-hidden="true" style="color:#7277ad"><use href="images/icons.svg#php"></use></svg> PHP
         </div>
         <div class="preview-tag preview-tag--html">
-          <i class="fa-solid fa-database" style="color:#0f2f70"></i> MySQL
+          <svg class="icon" aria-hidden="true" style="color:#0f2f70"><use href="images/icons.svg#database"></use></svg> MySQL
         </div>
         <div class="preview-tag preview-tag--css">
-          <i class="fa-brands fa-css3" style="color:#254bde"></i> CSS3
+          <svg class="icon" aria-hidden="true" style="color:#254bde"><use href="images/icons.svg#css3"></use></svg> CSS3
         </div>
       </div>
     </div>
@@ -212,25 +210,25 @@
     </div>
     <div class="stack-grid">
       <div class="tech-card reveal">
-        <div class="tech-card__icon"><i class="fa-brands fa-php" style="color:#7277ad"></i></div>
+        <div class="tech-card__icon"><svg class="icon" aria-hidden="true" style="color:#7277ad"><use href="images/icons.svg#php"></use></svg></div>
         <div class="tech-card__name">PHP</div>
         <div class="tech-card__desc">Backend procédural pur — aucun framework. Logique métier, sessions, authentification et traitement des formulaires.</div>
         <div class="tech-card__usage">Sessions · PDO · password_hash · require_once</div>
-        <div class="tech-card__bg"><i class="fa-brands fa-php"></i></div>
+        <div class="tech-card__bg"><svg class="icon" aria-hidden="true"><use href="images/icons.svg#php"></use></svg></div>
       </div>
       <div class="tech-card reveal">
-        <div class="tech-card__icon"><i class="fa-solid fa-database" style="color:#0f2f70"></i></div>
+        <div class="tech-card__icon"><svg class="icon" aria-hidden="true" style="color:#0f2f70"><use href="images/icons.svg#database"></use></svg></div>
         <div class="tech-card__name">MySQL</div>
         <div class="tech-card__desc">4 tables liées par clés étrangères — users, produits, commandes, lignes_commande. Requêtes préparées PDO.</div>
         <div class="tech-card__usage">JOIN · GROUP BY · Foreign Keys · PDO</div>
-        <div class="tech-card__bg"><i class="fa-solid fa-database"></i></div>
+        <div class="tech-card__bg"><svg class="icon" aria-hidden="true"><use href="images/icons.svg#database"></use></svg></div>
       </div>
       <div class="tech-card reveal">
-        <div class="tech-card__icon"><i class="fa-brands fa-css3" style="color:#254bde"></i></div>
+        <div class="tech-card__icon"><svg class="icon" aria-hidden="true" style="color:#254bde"><use href="images/icons.svg#css3"></use></svg></div>
         <div class="tech-card__name">HTML / CSS</div>
         <div class="tech-card__desc">Interfaces responsive sans framework CSS. Design inspiré de la charte LCF — bleu marine, blanc, rouge Made in France.</div>
         <div class="tech-card__usage">CSS Variables · Flexbox · Grid · Responsive</div>
-        <div class="tech-card__bg"><i class="fa-brands fa-css3"></i></div>
+        <div class="tech-card__bg"><svg class="icon" aria-hidden="true"><use href="images/icons.svg#css3"></use></svg></div>
       </div>
     </div>
   </section>
@@ -360,7 +358,7 @@
           PDO avec <code>prepare()</code> + <code>execute([$var])</code> protège contre les injections.
         </div>
         <div class="diff-card__solution">
-          <i class="fa-solid fa-check-circle"></i>
+          <svg class="icon" aria-hidden="true"><use href="images/icons.svg#check-circle"></use></svg>
           Toutes les requêtes avec variables utilisent des requêtes préparées.
         </div>
       </div>
@@ -372,7 +370,7 @@
           plutôt que de faire N requêtes en boucle.
         </div>
         <div class="diff-card__solution">
-          <i class="fa-solid fa-check-circle"></i>
+          <svg class="icon" aria-hidden="true"><use href="images/icons.svg#check-circle"></use></svg>
           LEFT JOIN entre commandes et users via user_id → une seule requête efficace.
         </div>
       </div>
@@ -384,7 +382,7 @@
           <code>lignes_commande</code> liés par l'ID généré.
         </div>
         <div class="diff-card__solution">
-          <i class="fa-solid fa-check-circle"></i>
+          <svg class="icon" aria-hidden="true"><use href="images/icons.svg#check-circle"></use></svg>
           Utilisation de <code>lastInsertId()</code> pour récupérer l'ID de la commande créée.
         </div>
       </div>
@@ -396,7 +394,7 @@
           sur le bon dossier et gérer les permissions fichiers.
         </div>
         <div class="diff-card__solution">
-          <i class="fa-solid fa-check-circle"></i>
+          <svg class="icon" aria-hidden="true"><use href="images/icons.svg#check-circle"></use></svg>
           VirtualHost configuré sur tismailb2b.mmi25d04.mmi-troyes.fr avec SSL possible.
         </div>
       </div>
@@ -414,10 +412,10 @@
       </p>
       <div class="cta-actions">
         <a class="btn-cta-primary" href="http://tismailb2b.mmi25d04.mmi-troyes.fr" target="_blank" rel="noopener">
-          <i class="fa-solid fa-globe"></i> Accéder au portail
+          <svg class="icon" aria-hidden="true"><use href="images/icons.svg#globe"></use></svg> Accéder au portail
         </a>
         <a class="btn-cta-ghost" href="https://github.com/Titoox" target="_blank" rel="noopener">
-          <i class="fa-brands fa-github"></i> Code source
+          <svg class="icon" aria-hidden="true"><use href="images/icons.svg#github"></use></svg> Code source
         </a>
       </div>
     </div>
@@ -440,10 +438,10 @@
     </div>
     <nav class="icones-footer" aria-label="Réseaux sociaux">
       <a href="https://www.linkedin.com/in/titouan-gaucher/" target="_blank" aria-label="LinkedIn">
-        <i class="fa-brands fa-linkedin"></i>
+        <svg class="icon" aria-hidden="true"><use href="images/icons.svg#linkedin"></use></svg>
       </a>
       <a href="https://github.com/Titoox" target="_blank" aria-label="GitHub">
-        <i class="fa-brands fa-github"></i>
+        <svg class="icon" aria-hidden="true"><use href="images/icons.svg#github"></use></svg>
       </a>
     </nav>
   </footer>

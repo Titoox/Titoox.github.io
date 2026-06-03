@@ -607,19 +607,24 @@ input, textarea, select { cursor: text; }
   font-family: var(--serif); font-size: 1.3em; font-weight: 400; font-style: italic;
   color: var(--texte); margin-bottom: 24px;
 }
-.carte-competence .fa-code,
-.carte-competence .fa-gear,
-.carte-competence .fa-paintbrush {
+.icon {
+  display: inline-block;
+  width: 1em; height: 1em;
+  vertical-align: -0.125em;
+  fill: currentColor;
+  flex-shrink: 0;
+}
+
+.icone-categorie {
   display: inline-flex; align-items: center; justify-content: center;
   width: 52px; height: 52px; border-radius: 12px;
-  background: var(--gris-clair); color: var(--v1); font-size: 1.3em;
+  background: var(--gris-clair); color: var(--v1);
   margin-bottom: 16px; border: 1px solid var(--bordure);
   transition: background 0.2s ease, color 0.2s ease, transform 0.2s var(--ease-spring);
   will-change: transform;
 }
-.carte-competence:hover .fa-code,
-.carte-competence:hover .fa-gear,
-.carte-competence:hover .fa-paintbrush {
+.icone-categorie .icon { width: 24px; height: 24px; }
+.carte-competence:hover .icone-categorie {
   background: var(--v1); color: #fff;
   transform: scale(1.08) rotate(-3deg);
 }
@@ -628,7 +633,7 @@ input, textarea, select { cursor: text; }
   font-size: 0.92em; line-height: 2.4; color: var(--texte2);
   display: flex; align-items: center; justify-content: center; gap: 8px;
 }
-.competence-liste .fa-brands { font-size: 1.2em; }
+.competence-liste .icon { width: 1.2em; height: 1.2em; }
 .competence-liste img { width: 18px; }
 
 /* ================================================================
@@ -724,9 +729,8 @@ input, textarea, select { cursor: text; }
 }
 .carte-projet:hover .projet-pied { transform: translateY(0); }
 
-.projet-technos .fa-brands,
-.projet-technos .fa-solid {
-  font-size: 1.2em; padding-left: 3px; color: rgba(255,255,255,0.85);
+.projet-technos .icon {
+  width: 1.2em; height: 1.2em; padding-left: 3px; color: rgba(255,255,255,0.85);
 }
 
 .lien-projet {
@@ -843,7 +847,7 @@ input, textarea, select { cursor: text; }
   border-color: var(--bordure);
   transform: translateX(5px);
 }
-.contact-ligne i { color: var(--v1); font-size: 1em; width: 18px; text-align: center; flex-shrink: 0; }
+.contact-ligne .icon { color: var(--v1); width: 18px; height: 1em; flex-shrink: 0; }
 .separateur { font-size: 1.6em; font-weight: 100; margin: 0 8px; }
 
 /* Responsive fenêtre contact */

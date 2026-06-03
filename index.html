@@ -8,21 +8,15 @@
   <title>Titouan Gaucher — Développeur Web Junior à Troyes | Portfolio</title>
 
   <!-- SEO : URL canonique (à mettre à jour avec votre URL déployée) -->
-  <link rel="canonical" href="https://titoox.github.io/" />
+  <link rel="canonical" href="https://titouan-gaucher.fr/" />
 
   <!-- Open Graph : aperçu sur les réseaux sociaux -->
   <meta property="og:title" content="Titouan Gaucher — Développeur Web Junior | Portfolio">
   <meta property="og:description" content="Portfolio de Titouan Gaucher, développeur web junior et étudiant BUT MMI à Troyes. Projets en HTML5, CSS3, JavaScript et PHP.">
-  <meta property="og:image" content="https://titoox.github.io/images/photo_profil.webp">
+  <meta property="og:image" content="https://titouan-gaucher.fr/images/photo_profil.webp">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://titoox.github.io/">
+  <meta property="og:url" content="https://titouan-gaucher.fr/">
   <meta property="og:locale" content="fr_FR">
-
-  <!-- Preconnect avant toute requête CDN (évite le double round-trip) -->
-  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
-
-  <!-- Font Awesome (icônes) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 
   <link rel="stylesheet" href="css/fonts.css" />
   <link rel="stylesheet" href="css/styles.css" />
@@ -37,8 +31,8 @@
     "@type": "Person",
     "name": "Titouan Gaucher",
     "jobTitle": "Développeur web junior",
-    "url": "https://titoox.github.io/",
-    "image": "https://titoox.github.io/images/photo_profil.webp",
+    "url": "https://titouan-gaucher.fr/",
+    "image": "https://titouan-gaucher.fr/images/photo_profil.webp",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Troyes",
@@ -113,7 +107,7 @@
       <div class="hero__actions">
         <!-- Fix #4 : bouton → lien (navigation sémantique) -->
         <a href="#profil" class="bouton-principal">
-          <i class="fa-solid fa-user"></i> Qui suis-je ?
+          <svg class="icon" aria-hidden="true"><use href="images/icons.svg#user"></use></svg> Qui suis-je ?
         </a>
         <a class="hero__link-cv" href="images/Titouan_Gaucher_CV.pdf" target="_blank">
           Mon CV
@@ -144,10 +138,10 @@
         </div>
         <nav class="icones-hero" aria-label="Réseaux sociaux">
           <a href="https://www.linkedin.com/in/titouan-gaucher/" target="_blank" aria-label="LinkedIn">
-            <i class="fa-brands fa-linkedin"></i>
+            <svg class="icon" aria-hidden="true"><use href="images/icons.svg#linkedin"></use></svg>
           </a>
           <a href="https://github.com/Titoox" target="_blank" aria-label="GitHub">
-            <i class="fa-brands fa-github"></i>
+            <svg class="icon" aria-hidden="true"><use href="images/icons.svg#github"></use></svg>
           </a>
         </nav>
       </div>
@@ -201,7 +195,7 @@
             tous mes projets numériques.
           </p>
           <a class="bouton-cv" href="images/Titouan_Gaucher_CV.pdf" target="_blank">
-            <i class="fa-solid fa-file-arrow-down"></i> Télécharger mon CV
+            <svg class="icon" aria-hidden="true"><use href="images/icons.svg#file-arrow-down"></use></svg> Télécharger mon CV
           </a>
         </div>
 
@@ -252,31 +246,31 @@
 
         <div class="competences-grille">
           <div class="carte-competence scroll">
-            <h4><i class="fa-solid fa-code"></i><br/>Langages</h4>
+            <h4><span class="icone-categorie"><svg class="icon" aria-hidden="true"><use href="images/icons.svg#code"></use></svg></span><br/>Langages</h4>
             <div class="competence-liste">
-              <p><i class="fa-brands fa-html5" style="color:#e96227"></i> HTML5</p>
-              <p><i class="fa-brands fa-css3" style="color:#254bde"></i> CSS3</p>
-              <p><i class="fa-brands fa-php" style="color:#7277ad"></i> PHP</p>
-              <p><i class="fa-brands fa-js" style="color:#efd81d"></i> JavaScript</p>
-              <p><i class="fa-brands fa-wordpress" style="color:#1e7095"></i> WordPress</p>
+              <p><svg class="icon" aria-hidden="true" style="color:#e96227"><use href="images/icons.svg#html5"></use></svg> HTML5</p>
+              <p><svg class="icon" aria-hidden="true" style="color:#254bde"><use href="images/icons.svg#css3"></use></svg> CSS3</p>
+              <p><svg class="icon" aria-hidden="true" style="color:#7277ad"><use href="images/icons.svg#php"></use></svg> PHP</p>
+              <p><svg class="icon" aria-hidden="true" style="color:#efd81d"><use href="images/icons.svg#js"></use></svg> JavaScript</p>
+              <p><svg class="icon" aria-hidden="true" style="color:#1e7095"><use href="images/icons.svg#wordpress"></use></svg> WordPress</p>
             </div>
           </div>
           <div class="carte-competence scroll">
-            <h4><i class="fa-solid fa-gear"></i><br/>Outils</h4>
+            <h4><span class="icone-categorie"><svg class="icon" aria-hidden="true"><use href="images/icons.svg#gear"></use></svg></span><br/>Outils</h4>
             <div class="competence-liste">
-              <p><i class="fa-brands fa-docker" style="color:#3d78ee"></i> Docker</p>
-              <p><i class="fa-brands fa-ubuntu" style="color:#df5222"></i> Ubuntu</p>
-              <p><i class="fa-solid fa-database" style="color:#0f2f70"></i> SQL</p>
-              <p><i class="fa-brands fa-bootstrap" style="color:#8812f5"></i> Bootstrap</p>
-              <p><i class="fa-solid fa-server" style="color:#16a34a"></i> Serveur</p>
+              <p><svg class="icon" aria-hidden="true" style="color:#3d78ee"><use href="images/icons.svg#docker"></use></svg> Docker</p>
+              <p><svg class="icon" aria-hidden="true" style="color:#df5222"><use href="images/icons.svg#ubuntu"></use></svg> Ubuntu</p>
+              <p><svg class="icon" aria-hidden="true" style="color:#0f2f70"><use href="images/icons.svg#database"></use></svg> SQL</p>
+              <p><svg class="icon" aria-hidden="true" style="color:#8812f5"><use href="images/icons.svg#bootstrap"></use></svg> Bootstrap</p>
+              <p><svg class="icon" aria-hidden="true" style="color:#16a34a"><use href="images/icons.svg#server"></use></svg> Serveur</p>
             </div>
           </div>
           <div class="carte-competence scroll">
-            <h4><i class="fa-solid fa-paintbrush"></i><br/>Design</h4>
+            <h4><span class="icone-categorie"><svg class="icon" aria-hidden="true"><use href="images/icons.svg#paintbrush"></use></svg></span><br/>Design</h4>
             <div class="competence-liste">
-              <p><img loading="lazy" decoding="async" src="./images/adobe-photoshop.256x256.png" alt="Adobe Photoshop" width="20" height="20"/> Photoshop</p>
-              <p><img loading="lazy" decoding="async" src="./images/adobe-illustrator.256x256.png" alt="Adobe Illustrator" width="20" height="20"/> Illustrator</p>
-              <p><i class="fa-brands fa-figma"></i> Figma</p>
+              <p><img loading="lazy" decoding="async" src="./images/adobe-photoshop.webp" alt="Adobe Photoshop" width="20" height="20"/> Photoshop</p>
+              <p><img loading="lazy" decoding="async" src="./images/adobe-illustrator.webp" alt="Adobe Illustrator" width="20" height="20"/> Illustrator</p>
+              <p><svg class="icon" aria-hidden="true"><use href="images/icons.svg#figma"></use></svg> Figma</p>
             </div>
           </div>
         </div>
@@ -297,14 +291,14 @@
 
       <div class="projets-grille">
         <div class="carte-projet scroll">
-          <div class="projet-image"><img loading="lazy" decoding="async" src="./images/pfc/desktop-step-1.jpg" alt="Jeu Pierre-Feuille-Ciseaux en JavaScript" width="800" height="600"/></div>
+          <div class="projet-image"><img loading="lazy" decoding="async" src="./images/pfc/desktop-step-1.webp" alt="Jeu Pierre-Feuille-Ciseaux en JavaScript" width="800" height="600"/></div>
           <div class="projet-infos">
             <p class="projet-description">Jeu Pierre-Feuille-Ciseaux</p>
             <div class="projet-pied">
               <span class="projet-technos">
-                <i class="fa-brands fa-html5" style="color:rgba(255,255,255,0.9)"></i>
-                <i class="fa-brands fa-css3" style="color:rgba(255,255,255,0.9)"></i>
-                <i class="fa-brands fa-js" style="color:rgba(255,255,255,0.9)"></i>
+                <svg class="icon" aria-hidden="true" style="color:rgba(255,255,255,0.9)"><use href="images/icons.svg#html5"></use></svg>
+                <svg class="icon" aria-hidden="true" style="color:rgba(255,255,255,0.9)"><use href="images/icons.svg#css3"></use></svg>
+                <svg class="icon" aria-hidden="true" style="color:rgba(255,255,255,0.9)"><use href="images/icons.svg#js"></use></svg>
               </span>
               <a class="lien-projet" href="projet-pfc.html">Voir le projet</a>
             </div>
@@ -320,9 +314,9 @@
             <p class="projet-description">Portail B2B revendeurs — La Chaussette de France</p>
             <div class="projet-pied">
               <span class="projet-technos">
-                <i class="fa-brands fa-php" style="color:rgba(255,255,255,0.9)"></i>
-                <i class="fa-solid fa-database" style="color:rgba(255,255,255,0.9)"></i>
-                <i class="fa-brands fa-css3" style="color:rgba(255,255,255,0.9)"></i>
+                <svg class="icon" aria-hidden="true" style="color:rgba(255,255,255,0.9)"><use href="images/icons.svg#php"></use></svg>
+                <svg class="icon" aria-hidden="true" style="color:rgba(255,255,255,0.9)"><use href="images/icons.svg#database"></use></svg>
+                <svg class="icon" aria-hidden="true" style="color:rgba(255,255,255,0.9)"><use href="images/icons.svg#css3"></use></svg>
               </span>
               <a class="lien-projet" href="projet-tismailb2b.html">Voir le projet</a>
             </div>
@@ -337,9 +331,9 @@
             <p class="projet-description">Répertoire de marques de mode</p>
             <div class="projet-pied">
               <span class="projet-technos">
-                <i class="fa-brands fa-php" style="color:rgba(255,255,255,0.9)"></i>
-                <i class="fa-solid fa-database" style="color:rgba(255,255,255,0.9)"></i>
-                <i class="fa-brands fa-css3" style="color:rgba(255,255,255,0.9)"></i>
+                <svg class="icon" aria-hidden="true" style="color:rgba(255,255,255,0.9)"><use href="images/icons.svg#php"></use></svg>
+                <svg class="icon" aria-hidden="true" style="color:rgba(255,255,255,0.9)"><use href="images/icons.svg#database"></use></svg>
+                <svg class="icon" aria-hidden="true" style="color:rgba(255,255,255,0.9)"><use href="images/icons.svg#css3"></use></svg>
               </span>
               <a class="lien-projet" href="projet-sae203.html">Voir le projet</a>
             </div>
@@ -354,40 +348,16 @@
             <p class="projet-description">Calculatrice JavaScript vanilla</p>
             <div class="projet-pied">
               <span class="projet-technos">
-                <i class="fa-brands fa-js" style="color:rgba(255,255,255,0.9)"></i>
-                <i class="fa-brands fa-html5" style="color:rgba(255,255,255,0.9)"></i>
-                <i class="fa-brands fa-css3" style="color:rgba(255,255,255,0.9)"></i>
+                <svg class="icon" aria-hidden="true" style="color:rgba(255,255,255,0.9)"><use href="images/icons.svg#js"></use></svg>
+                <svg class="icon" aria-hidden="true" style="color:rgba(255,255,255,0.9)"><use href="images/icons.svg#html5"></use></svg>
+                <svg class="icon" aria-hidden="true" style="color:rgba(255,255,255,0.9)"><use href="images/icons.svg#css3"></use></svg>
               </span>
               <a class="lien-projet" href="projet-calculatrice.html">Voir le projet</a>
             </div>
           </div>
         </div>
-        <div class="carte-projet scroll">
-          <div class="projet-image"><img loading="lazy" decoding="async" src="./images/web.png" alt="Projet web HTML CSS PHP" width="800" height="600"/></div>
-          <div class="projet-infos">
-            <p class="projet-description">Lorem ipsum dolor sit amet</p>
-            <div class="projet-pied">
-              <span class="projet-technos">
-                <i class="fa-brands fa-html5" style="color:rgba(255,255,255,0.9)"></i>
-                <i class="fa-brands fa-css3" style="color:rgba(255,255,255,0.9)"></i>
-              </span>
-              <a class="lien-projet" href="#" target="_blank">Visiter</a>
-            </div>
-          </div>
-        </div>
-        <div class="carte-projet scroll">
-          <div class="projet-image"><img loading="lazy" decoding="async" src="./images/web.png" alt="Projet web Bootstrap PHP" width="800" height="600"/></div>
-          <div class="projet-infos">
-            <p class="projet-description">Lorem ipsum dolor sit amet</p>
-            <div class="projet-pied">
-              <span class="projet-technos">
-                <i class="fa-brands fa-bootstrap" style="color:rgba(255,255,255,0.9)"></i>
-                <i class="fa-brands fa-php" style="color:rgba(255,255,255,0.9)"></i>
-              </span>
-              <a class="lien-projet" href="#" target="_blank">Visiter</a>
-            </div>
-          </div>
-        </div>
+
+
       </div>
 
     </div>
@@ -426,19 +396,19 @@
             </div>
             <div class="contact-liste">
               <a class="contact-ligne" href="mailto:titouan.gaucher22@gmail.com">
-                <i class="fa-solid fa-envelope"></i> titouan.gaucher22@gmail.com
+                <svg class="icon" aria-hidden="true"><use href="images/icons.svg#envelope"></use></svg> titouan.gaucher22@gmail.com
               </a>
               <a class="contact-ligne" href="tel:+33658459426">
-                <i class="fa-solid fa-phone"></i> +33 6 58 45 94 26
+                <svg class="icon" aria-hidden="true"><use href="images/icons.svg#phone"></use></svg> +33 6 58 45 94 26
               </a>
               <a class="contact-ligne" href="https://www.linkedin.com/in/titouan-gaucher/" target="_blank">
-                <i class="fa-brands fa-linkedin"></i> titouan-gaucher
+                <svg class="icon" aria-hidden="true"><use href="images/icons.svg#linkedin"></use></svg> titouan-gaucher
               </a>
               <a class="contact-ligne" href="https://github.com/Titoox" target="_blank">
-                <i class="fa-brands fa-github"></i> Titoox
+                <svg class="icon" aria-hidden="true"><use href="images/icons.svg#github"></use></svg> Titoox
               </a>
               <span class="contact-ligne contact-ligne--info">
-                <i class="fa-solid fa-location-dot"></i> Troyes, France
+                <svg class="icon" aria-hidden="true"><use href="images/icons.svg#location-dot"></use></svg> Troyes, France
               </span>
             </div>
           </div>
@@ -495,10 +465,10 @@
     </div>
     <nav class="icones-footer" aria-label="Réseaux sociaux">
       <a href="https://www.linkedin.com/in/titouan-gaucher/" target="_blank" aria-label="LinkedIn">
-        <i class="fa-brands fa-linkedin"></i>
+        <svg class="icon" aria-hidden="true"><use href="images/icons.svg#linkedin"></use></svg>
       </a>
       <a href="https://github.com/Titoox" target="_blank" aria-label="GitHub">
-        <i class="fa-brands fa-github"></i>
+        <svg class="icon" aria-hidden="true"><use href="images/icons.svg#github"></use></svg>
       </a>
     </nav>
   </footer>

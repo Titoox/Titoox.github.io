@@ -237,13 +237,12 @@
   }
   .carte-competence { padding: 28px 20px; }
   .carte-competence h4 { font-size: 1.1em; margin-bottom: 16px; }
-  .carte-competence .fa-code,
-  .carte-competence .fa-gear,
-  .carte-competence .fa-paintbrush {
-    width: 44px; height: 44px; line-height: 44px;
-    font-size: 1.1em; border-radius: 10px;
+  .icone-categorie {
+    width: 44px; height: 44px;
+    border-radius: 10px;
     margin-bottom: 10px;
   }
+  .icone-categorie .icon { width: 20px; height: 20px; }
   .competence-liste p { font-size: 0.88em; line-height: 2.0; }
 
   /* ── SECTION PROJETS ── */
